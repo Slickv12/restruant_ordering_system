@@ -1,0 +1,44 @@
+/restaurant-ordering-system
+│── /admin
+│   ├── dashboard.php
+│   ├── manage_orders.php
+│   ├── manage_tables.php
+│   ├── manage_menu.php
+│   ├── manage_users.php
+│   ├── reports.php
+│   ├── logout.php
+│── /restaurant_staff
+│   ├── staff_dashboard.php
+│   ├── view_orders.php
+│   ├── manage_reservations.php
+│   ├── logout.php
+│── /user
+│   ├── user_dashboard.php
+│   ├── browse_menu.php
+│   ├── cart.php
+│   ├── checkout.php
+│   ├── reservations.php
+│   ├── order_history.php
+│   ├── logout.php
+│── /assets
+│   ├── /css
+│   │   ├── style.css
+│   ├── /js
+│   │   ├── script.js
+│   ├── /images
+│── /includes
+│   ├── db_connect.php   # Database connection
+│   ├── header.php       # Common header
+│   ├── footer.php       # Common footer
+│   ├── sms_api.php      # Fast2SMS integration
+│── /auth
+│   ├── register.php
+│   ├── login.php
+│   ├── logout.php
+│── /config
+│   ├── config.php       # Site settings & constants
+│── /api
+│   ├── send_sms.php     # API to send SMS notifications
+│── index.php
+│── .htaccess
+│── README.md
