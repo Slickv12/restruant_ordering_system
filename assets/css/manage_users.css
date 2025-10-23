@@ -1,0 +1,168 @@
+/* Background Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../images/bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; /* Removes Scrollbars */
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Centered Box */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #f8b400;
+    text-align: center;
+}
+
+/* Search Bar Centering */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Search Bar */
+.search-container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #f8b400;
+    border-radius: 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background: #f8b400;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background: #fff;
+    color: #f8b400;
+    border: 2px solid #f8b400;
+}
+
+/* Back to Dashboard Button (Positioned on Top Right) */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #0f0700;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.back-btn:hover {
+    background: #fff;
+    color: #f8b400;
+    border: 2px solid #f8b400;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #220f01;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* User Data in White */
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: white;
+}
+
+/* Table Hover Effect */
+tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-btn {
+    background: #4CAF50;
+}
+
+.delete-btn {
+    background: #E74C3C;
+}
+
+.edit-btn:hover {
+    background: #45a049;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}

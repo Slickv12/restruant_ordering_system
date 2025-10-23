@@ -1,0 +1,81 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Registration Container with Black Transparent Background */
+.register-container {
+    background: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+/* Form Styling */
+.register-form h2 {
+    margin-bottom: 15px;
+    color: #ffffff; /* White text */
+}
+
+.register-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Placeholder Color */
+.register-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #218838;
+}
+
+.register-form p {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.register-form a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+//logout style
+.logout-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}

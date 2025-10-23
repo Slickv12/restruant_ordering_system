@@ -1,0 +1,98 @@
+/* Background Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/restaurant-bg.jpg'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Reports Container */
+.reports-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Payment & Order Status Styling */
+.paid {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.pending {
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.completed {
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.cancelled {
+    color: #F44336;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reports-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
